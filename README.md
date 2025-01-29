@@ -8,6 +8,7 @@ Development of an open-source Home Assistant integration that enables seamless c
 ### Technical Requirements
 #### Core Functionality
 1. Integration Requirements:
+   - Full installation throug Home Assistant UI eg [HACS}(https://www.hacs.xyz/)
    - Full configuration through Home Assistant UI
    - Automatic discovery of Zap P1-meter on local network
    - Real-time data polling with configurable intervals
