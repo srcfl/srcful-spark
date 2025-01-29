@@ -8,7 +8,7 @@ https://github.com/srcfl/srcful-spark/tree/zap
 
 ## General Process
  * Check the grant branch of this repo. Make sure you read the instructions there carefully.
- * When done you modify the submission.md file and issue a pull request.
+ * When done you modify the *submission.md* file and issue a pull request in the corresponding branch.
  * We will review your submission - and hopefully accept your pull reqwuest, this would indicate that you have won the grant.
  * Note that indivdual grants may have special rules and submission procedures that deviate from the above.
 
