@@ -1,95 +1,139 @@
-**Zap Spark Initiative: Home Assistant Integration for Zap P1-Meter**
+# Zap Spark Initiative: Home Assistant Integration - Community Improvements
 
-**Challenge Overview**  
-We’re calling on talented developers to create an open-source Home Assistant integration for the Zap P1-Meter, enabling seamless connectivity, real-time data visualization, and smart energy monitoring for users. Help us empower homeowners to take control of their energy usage while contributing to a growing ecosystem of sustainable tech.
+## Challenge Overview
 
-**Grant Amount**  
-The first submission that meets all requirements and passes our review process will be awarded **1,000 USDC**. Plus, you’ll gain early access to a Zap P1-Meter test device and recognition as a pioneer in our Spark Initiative community.
+We've created a reference implementation for the Zap P1-Meter Home Assistant integration, but we need the community's help to bring it to Home Assistant core standards. We're calling on talented developers to improve our open-source integration with UI configuration, multi-device support, comprehensive testing, and more. Help us create a professional integration that will be included in Home Assistant core!
 
-**Who Can Participate**  
-This challenge is open to individual developers and teams who are passionate about smart home technology and sustainability. To participate, register at [https://sourceful.energy/grants](https://sourceful.energy/grants) and reach out to join the Spark Initiative.
+## Grant Amounts
 
-**Technical Requirements**
+Multiple grants are available for specific improvements:
+- **Config Flow Implementation (UI setup)**: 300 USDC
+- **Multi-Device Support**: 200 USDC
+- **Test Coverage (80%+)**: 200 USDC
+- **DataUpdateCoordinator Migration**: 200 USDC
+- **Additional improvements**: 100 USDC each
 
-**Core Functionality**  
-1. **Integration Requirements**  
-   - Full installation via Home Assistant UI (e.g., through HACS).  
-   - Full configuration via Home Assistant UI.  
-   - Automatic discovery of the Zap P1-Meter on the local network.  
-   - Real-time data polling with user-configurable intervals.  
-   - Support for all standard P1 data points (per DSMR specifications).  
+*First come, first served - claim an issue on GitHub to get started!*
 
-2. **Data Handling**  
-   - Parse all standard P1 DSMR metrics accurately.  
-   - Store historical data using Home Assistant’s native storage system.  
-   - Gracefully handle connection interruptions with reconnection logic.  
-   - Implement robust error handling and detailed logging for debugging.  
+## Who Can Participate
 
-3. **User Interface**  
-   - Display clear status indicators for device connectivity and data updates.  
-   - Show real-time power consumption and production data.  
-   - Provide historical data visualization through graphs in Home Assistant.  
-   - (Optional) Include energy cost calculations based on user-defined tariffs.  
+This challenge is open to individual developers and teams who are passionate about Home Assistant and creating quality integrations. To participate, check the open issues at [github.com/frahlg/zap_hass](https://github.com/frahlg/zap_hass) and register at [sourceful.energy/grants](https://sourceful.energy/grants).
 
-**Technical Specifications**  
-1. **Code Quality**  
-   - Adhere to Home Assistant’s development guidelines.  
-   - Include comprehensive documentation for setup, usage, and troubleshooting.  
-   - Write unit tests with at least 80% code coverage.  
-   - Follow Python type hinting and PEP 8 style guidelines.  
+## Current Implementation Status
 
-2. **Security**  
-   - Ensure secure connection handling with encrypted communication where applicable.  
-   - Avoid hardcoded credentials and implement secure storage of sensitive data.  
-   - Include proper input validation to prevent injection attacks.  
-   - Implement rate limiting to prevent abuse or overload.  
+### What's Already Working
+- ✅ HACS-compatible custom component
+- ✅ 35+ sensors from OBIS codes
+- ✅ Energy Dashboard integration
+- ✅ Real-time power monitoring
+- ✅ Device diagnostics and system info
+- ✅ YAML-based configuration
 
-**Submission Requirements**
+### What We Need
 
-**Code Deliverables**  
-- Complete source code hosted on a public GitHub repository.  
-- Installation instructions for Home Assistant users.  
-- Configuration examples showcasing different setups.  
-- Testing instructions for reviewers to verify functionality.  
+## Priority Improvements for Core Inclusion
 
-**Documentation**  
-- Detailed setup guide for end users.  
-- Explanation of configuration options and their use cases.  
-- Troubleshooting guide for common issues.  
-- API documentation for developers extending the integration.  
+### 1. Config Flow Implementation
+- Replace YAML config with UI-based setup
+- Add device discovery (mDNS/SSDP)
+- Implement config validation
+- Follow Home Assistant config flow guidelines
+- Include options flow for settings
 
-**Review Process**
+### 2. Multi-Device Support
+- Support multiple Zap devices per installation
+- Unique entity naming per device
+- Proper device registry management
+- Handle device removal/addition
 
-1. **Initial Screening**  
-   - Code review for quality, adherence to guidelines, and security best practices.  
-   - Verification of documentation completeness.  
-   - Confirmation of test coverage (minimum 80%).  
+### 3. Comprehensive Testing
+- Achieve 80%+ test coverage with pytest
+- Mock all API responses
+- Test error conditions
+- Test all sensor types
+- Include integration tests
 
-2. **Technical Testing**  
-   - Installation testing on a Home Assistant instance.  
-   - Functionality verification against all requirements.  
-   - Performance testing under normal and edge-case conditions.  
-   - Security assessment for vulnerabilities.  
+### 4. DataUpdateCoordinator Pattern
+- Migrate from current polling to DataUpdateCoordinator
+- Implement proper error handling
+- Add connection state management
+- Follow HA best practices
 
-3. **Final Approval**  
-   - Community review period (7 days) for feedback from other developers and users.  
-   - Final technical review by the Zap team.  
-   - Grant distribution and early access device shipping upon approval.  
+### 5. Additional Improvements
+- Diagnostics support
+- Repair suggestions
+- Device triggers for automations
+- Documentation improvements
+- Code quality enhancements
 
-**Timeline**  
-- **Challenge Open:** [Insert Date]  
-- **Submission Deadline:** Open until the first qualifying submission is approved.  
-- **Review Period:** Up to 14 days after submission.  
+## Technical Requirements
 
-**Why Participate?**  
-By tackling this challenge, you’ll not only earn a grant but also:  
-- Gain early access to Zap P1-Meter hardware for testing and development.  
-- Be featured as a contributor in our growing Spark Initiative community.  
-- Help thousands of Home Assistant users monitor their energy usage sustainably.  
+### Development Standards
+- Follow [Home Assistant development guidelines](https://developers.home-assistant.io/docs/development_index)
+- Use type hints throughout
+- Implement proper logging
+- Follow Python PEP 8 style
+- Include docstrings
 
-**How to Get Started**  
-1. Register your interest at [https://sourceful.energy/grants](https://sourceful.energy/grants).  
-2. Join our Discord community for updates, collaboration, and support.  
-3. Submit your integration via GitHub and notify us through the Spark Initiative channels.  
+### Integration Quality
+- Meet [Home Assistant Integration Quality Scale](https://developers.home-assistant.io/docs/integration_quality_scale_index) requirements
+- Implement proper error handling
+- Add connection retry logic
+- Handle edge cases gracefully
 
-Let’s spark an energy revolution together! We can’t wait to see what you build.  
+### Testing Requirements
+- Unit tests with pytest
+- Mock external API calls
+- Test coverage reports
+- CI/CD integration
+
+## Submission Requirements
+
+### How to Contribute
+
+1. Review the current implementation at [github.com/frahlg/zap_hass](https://github.com/frahlg/zap_hass)
+2. Check [open issues](https://github.com/frahlg/zap_hass/issues) for available tasks
+3. Comment on an issue to claim it (one task per developer at a time)
+4. Fork the repository and create a feature branch
+5. Submit a pull request with:
+   - Implementation following task requirements
+   - Tests for new functionality
+   - Updated documentation
+   - Clear commit messages
+
+### Review Process
+- Code review by Sourceful team
+- Functionality testing with real Zap devices
+- Home Assistant standards compliance check
+- Community feedback period
+- Grant payment upon PR merge
+
+## Why Participate?
+
+By improving this integration, you'll:
+- 🏠 Help thousands of Zap users get official Home Assistant support
+- 💡 Gain experience with Home Assistant core development
+- 💰 Earn grants for your contributions
+- 🏆 Be credited in the official integration
+- 🤝 Join our growing developer community
+
+## Timeline
+
+- **Challenge Open**: Ongoing
+- **Tasks Available**: First come, first served
+- **Review Period**: 3-7 days per PR
+- **Payment**: Within 7 days of PR merge
+
+## How to Get Started
+
+1. Visit [github.com/frahlg/zap_hass](https://github.com/frahlg/zap_hass)
+2. Review the README and current code
+3. Check [open issues](https://github.com/frahlg/zap_hass/issues) for available tasks
+4. Claim an issue by commenting
+5. Start coding!
+
+## Questions?
+
+Join our Discord at [discord.gg/sourceful](https://discord.gg/sourceful) #dev channel for support and discussion.
+
+**Let's work together to bring professional Zap integration to Home Assistant core!** 🚀
