@@ -17,7 +17,7 @@ Multiple grants are available for specific improvements:
 
 ## Who Can Participate
 
-This challenge is open to individual developers and teams who are passionate about Home Assistant and creating quality integrations. To participate, check the open issues at [github.com/frahlg/zap_hass](https://github.com/frahlg/zap_hass) and register at [sourceful.energy/grants](https://sourceful.energy/grants).
+This challenge is open to individual developers and teams who are passionate about Home Assistant and creating quality integrations. To participate, check the open issues at [github.com/srcfl/zap-home-assistant](https://github.com/srcfl/zap-home-assistant) and register at [sourceful.energy/grants](https://sourceful.energy/grants).
 
 ## Current Implementation Status
 
@@ -91,8 +91,8 @@ This challenge is open to individual developers and teams who are passionate abo
 
 ### How to Contribute
 
-1. Review the current implementation at [github.com/frahlg/zap_hass](https://github.com/frahlg/zap_hass)
-2. Check [open issues](https://github.com/frahlg/zap_hass/issues) for available tasks
+1. Review the current implementation at [github.com/srcfl/zap-home-assistant](https://github.com/srcfl/zap-home-assistant)
+2. Check [open issues](https://github.com/srcfl/zap-home-assistant/issues) for available tasks
 3. Comment on an issue to claim it (one task per developer at a time)
 4. Fork the repository and create a feature branch
 5. Submit a pull request with:
@@ -126,14 +126,14 @@ By improving this integration, you'll:
 
 ## How to Get Started
 
-1. Visit [github.com/frahlg/zap_hass](https://github.com/frahlg/zap_hass)
+1. Visit [github.com/srcfl/zap-home-assistant](https://github.com/srcfl/zap-home-assistant)
 2. Review the README and current code
-3. Check [open issues](https://github.com/frahlg/zap_hass/issues) for available tasks
+3. Check [open issues](https://github.com/srcfl/zap-home-assistant/issues) for available tasks
 4. Claim an issue by commenting
 5. Start coding!
 
 ## Questions?
 
-Join our Discord at [discord.gg/sourceful](https://discord.gg/sourceful) #dev channel for support and discussion.
+Join our Discord at [discord.com/invite/srcful](https://discord.com/invite/srcful) #dev channel for support and discussion.
 
 **Let's work together to bring professional Zap integration to Home Assistant core!** 🚀
