@@ -17,7 +17,7 @@ Multiple grants are available for specific improvements:
 
 ## Who Can Participate
 
-This challenge is open to individual developers and teams who are passionate about Home Assistant and creating quality integrations. To participate, check the open issues at [github.com/srcfl/zap-home-assistant](https://github.com/srcfl/zap-home-assistant) and register at [sourceful.energy/grants](https://sourceful.energy/grants).
+This challenge is open to individual developers and teams who are passionate about Home Assistant and creating quality integrations. To participate, check the open issues at [github.com/srcfl/zap-home-assistant](https://github.com/srcfl/zap-home-assistant)
 
 ## Current Implementation Status
 
